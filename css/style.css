@@ -115,7 +115,7 @@
 
 .footer {
 
-height: 497px;
+height: 375px;
 background-color: #272727;
 
 display: grid;
@@ -132,7 +132,7 @@ display: grid;
 /* -------------------- */
 
 .reviews{
-	padding: 40px;
+	padding: 20px;
 }
 
 /* Trustpilot billede */
@@ -146,9 +146,13 @@ height: 86px;
 
 /* Overskrift */
 
-.reviews h3 {
-    margin-top: 50px;
-    font-size: 22px;
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
 }
 
 /* Hver anmeldelse */
@@ -173,10 +177,12 @@ height: 86px;
 /* Teksten under stjernerne */
 
 .reviews {
-    width: 500px;
+   
+    
 
     font-size: 13px;
     color: #dddddd;
+    line-height: 1.25;
 }
 
 
@@ -189,7 +195,8 @@ height: 86px;
 .footer-links {
 
 
- padding: 40px;
+ padding-top: 40px;
+ padding-left: 90px;
 
     display: flex;
     flex-direction: column;
@@ -202,9 +209,10 @@ height: 86px;
 
     text-decoration: none;
 
-    font-size: 30px;
+    font-size: 20px;
 
     margin-bottom: 5px;
+    font-style: italic;
 }
 
 /* Første link */
@@ -212,6 +220,9 @@ height: 86px;
 .footer-links a:first-child{
 
     text-decoration: underline;
+    font-weight: 800;
+    font-style: normal;
+  
 
 }
 
@@ -222,8 +233,6 @@ height: 86px;
 }
 
 
-
-
 /* -------------------- */
 /* HØJRE SIDE */
 /* -------------------- */
@@ -231,7 +240,8 @@ height: 86px;
 
 .app-section {
    background: radial-gradient(49.9% 46.71% at 50% 50%, rgba(24, 22, 22, 0.20) 16.83%, rgba(42, 39, 39, 0.20) 30.29%, rgba(36, 34, 34, 0.20) 53.37%, rgba(135, 132, 132, 0.20) 83.17%, rgba(196, 192, 192, 0.20) 100%), #2C9844;
-   padding: 80px 50px;
+   padding: 40px 20px;
+   height: 375px;
 }
 
 /* Pulse logo */
@@ -239,45 +249,123 @@ height: 86px;
 .app-logo {
     width: 85px;
     height: 85px;
-    margin: 0;
+    margin-bottom: 30px;
 
     background-color: #fffde0;
     border-radius: 18px;
-   justify-content: center
+    display:flex;
+   justify-content:center;
     align-items: center;
+    overflow: hidden;
+}
+
+
+.app-logo img {
+    width: 120px;
 
 }
 
+/* Pulse core overskrift */
+
+.app-section h2 {
+    font-size: 25px;
+    color: white;
+}
+
+
+/* Stjerner ved appen */
+
+.app-rating {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 5px;
+}
+
+/* Hver app-stjerne */
+
+.app-rating img {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* Teksten "1.5 tusind" */
+
+ .user-reviews {
+    margin-left: 20px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+    color: white;
+}
+
+
 /* BUTTON */
 
+
+/* App Store billede */
+
+.app-store {
+    
+width: 40px;
+height: auto;
+    margin:0;
+}
+
 .download-button {
-    margin: 70px auto 0;
+    margin-top: 50px;
 
     padding: 12px 15px;
 
     background-color: white;
     border: 3px solid #087cff;
     border-radius: 15px;
-
     font-size: 25px;
+
+    display: flex;
     align-items: center;
+    gap: 10px;
+
  }   
 
+ .download :hover{
 
- /* BOTTOM */
+text-decoration: underline;
+ }
+
+
+
+/* -------------------- */
+/* NEDERSTE GRØNNE BJÆLKE */
+/* -------------------- */
+
 .footer-bottom {
+      grid-column: 1 / 4;
  background-color: #3cad54;
 
-padding: 4px 0 5px 20px;
 
-justify-content: space-between;
+ 
+
+display: flex;
+ justify-content: space-between;
 align-items: center;
 
 }
 
+/* Copyright */
+
+.footer-bottom small {
+    font-size: 11px;
+    color: white;
+}
+
 .footer-bottom a{
 
-color: white
-font-size 11px
+color: white;
+font-size: 11px;
 
 }
