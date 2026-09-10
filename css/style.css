@@ -231,13 +231,21 @@ height: 86px;
 
 .app-section {
    background: radial-gradient(49.9% 46.71% at 50% 50%, rgba(24, 22, 22, 0.20) 16.83%, rgba(42, 39, 39, 0.20) 30.29%, rgba(36, 34, 34, 0.20) 53.37%, rgba(135, 132, 132, 0.20) 83.17%, rgba(196, 192, 192, 0.20) 100%), #2C9844;
-   padding: 52px 60px;
+   padding: 80px 50px;
 }
+
+/* Pulse logo */
 
 .app-logo {
     width: 85px;
     height: 85px;
     margin: 0;
+
+    background-color: #fffde0;
+    border-radius: 18px;
+   justify-content: center
+    align-items: center;
+
 }
 
 /* BUTTON */
