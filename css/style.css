@@ -30,6 +30,11 @@
 
 }
 
+
+#pulse-logo :hover img{
+transform: scale(1.40)
+}
+
 .search-tools {
     align-items: end;
     right: 30px;
@@ -56,6 +61,10 @@
   object-fit: contain;
 }
 
+.search-tools :hover{
+transform: scale(1.05);
+
+}
 
 #menu {
     display: flex;
@@ -74,6 +83,11 @@
     text-decoration: none;
     font-size: medium;
 
+}
+
+#menu  :hover a {
+text-decoration: underline;
+transform: scale(1.05);
 }
 
 
@@ -115,7 +129,7 @@
 
 .footer {
 
-height: 375px;
+
 background-color: #272727;
 
 display: grid;
@@ -132,17 +146,22 @@ display: grid;
 /* -------------------- */
 
 .reviews{
-	padding: 20px;
+
+    padding: 20px;
+    margin-bottom: 0;
 }
 
 /* Trustpilot billede */
 
 .trustpilot{
 
-width: 199.883px;
-height: 86px;
+width: 110.99px;
+height: 60px;
 }
 
+.trustpilot:hover {
+    transform: scale(1.08);
+}
 
 /* Overskrift */
 
@@ -196,7 +215,7 @@ h3 {
 
 
  padding-top: 40px;
- padding-left: 90px;
+ padding-left: 40px;
 
     display: flex;
     flex-direction: column;
@@ -241,7 +260,7 @@ h3 {
 .app-section {
    background: radial-gradient(49.9% 46.71% at 50% 50%, rgba(24, 22, 22, 0.20) 16.83%, rgba(42, 39, 39, 0.20) 30.29%, rgba(36, 34, 34, 0.20) 53.37%, rgba(135, 132, 132, 0.20) 83.17%, rgba(196, 192, 192, 0.20) 100%), #2C9844;
    padding: 40px 20px;
-   height: 375px;
+
 }
 
 /* Pulse logo */
@@ -315,6 +334,9 @@ width: 40px;
 height: auto;
     margin:0;
 }
+.app-store:hover {
+    transform: scale(1.15);
+}
 
 .download-button {
     margin-top: 50px;
@@ -324,19 +346,22 @@ height: auto;
     background-color: white;
     border: 3px solid #087cff;
     border-radius: 15px;
-    font-size: 25px;
 
     display: flex;
     align-items: center;
     gap: 10px;
+    color: #272727;
+}
 
- }   
+.download-link {
+    color: #272727;
+    text-decoration: none;
+    font-size: 25px;
+}
 
- .download :hover{
-
-text-decoration: underline;
- }
-
+ .download-link:hover {
+    text-decoration: underline;
+}
 
 
 /* -------------------- */
@@ -346,6 +371,7 @@ text-decoration: underline;
 .footer-bottom {
       grid-column: 1 / 4;
  background-color: #3cad54;
+ margin: 0;
 
 
  
@@ -367,5 +393,17 @@ align-items: center;
 
 color: white;
 font-size: 11px;
+text-decoration: none;
+
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+       color: darkgreen;
+}
+
+body{
+
+margin: 0;
 
 }
