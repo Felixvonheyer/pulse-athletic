@@ -158,10 +158,26 @@ height: 86px;
     margin-top: 30px;
 }
 
+/* Stjernerne */
+
+.stars {
+    gap: 3px;
+}
+
+/* Hver enkelt stjerne */
 
 .stars img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+}
+
+/* Teksten under stjernerne */
+
+.reviews {
+    width: 500px;
+
+    font-size: 13px;
+    color: #dddddd;
 }
 
 
