@@ -95,10 +95,15 @@
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     font-weight: bold;
-    text-decoration:none;
+    transform: translateY(50%);
     
+   
 
+}
 
+#cta-button a {
+    color: rgb(0, 0, 0);
+    text-decoration:none;
 }
 
 
