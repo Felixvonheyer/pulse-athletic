@@ -26,8 +26,6 @@
     width: 200px;
     height: auto;
     
-    
-
 }
 
 
@@ -111,7 +109,7 @@ font-size: 17px;
     box-shadow: 0 6px 50px rgba(0, 0, 0, 0.12); 
     font-weight: bold;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 24px;
 }
 
 h1{
@@ -126,6 +124,194 @@ color: white;
 font-family: serif
 
 }
+
+.price {
+margin-top: 30px;
+font-size: 28px;
+font-weight: 600;
+font-style: italic;
+
+
+}
+
+
+/*------------------ */
+/*    SECTION 2     */
+/*-------------------*/
+
+.ur-features {
+  background-color: #f7f7dc;
+  padding: 90px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr auto;
+  align-items: center;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#pulse-label {
+  font-size: 48px;
+  margin: 0 0 5px 0;
+    white-space: nowrap;
+}
+
+#uret-der {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+    white-space: nowrap;
+}
+
+.intro {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  max-width: 400px;
+  text-decoration:none;
+  font-weight: 700;
+}
+
+.feature-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-liste li {
+  font-size: 16px;
+  padding: 8px 0 8px 22px;
+  position: relative;
+  line-height: 1.5;
+  color: #444;
+}
+
+.feature-liste li h4 {
+  font-size: 17px;
+  margin: 0 0 3px 0;
+  color: #111;
+}
+
+.feature-liste li::before {
+  content: "•";
+  color: #2d5f3d;
+  font-size: 28px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.kob-nu-overskrift {
+  font-size: 22px;
+  margin: 30px 0 15px 0;
+  text-decoration: none;
+
+}
+
+specs-strip {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 25px 0 0 0;
+  border-top: 1px solid rgba(45, 95, 61, 0.2);
+  border-bottom: 1px solid rgba(45, 95, 61, 0.2);
+  max-width: 450px;
+}
+
+.specs-strip li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.specs-strip img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-bottom: 2px;
+}
+
+.specs-strip .spec-tal {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  color: #111;
+}
+
+.specs-strip .spec-label {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+
+
+
+
+.ur-billede img {
+  width: 450px;
+  display: block;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #2d5f3d;
+}
+
+
+.app-telefon {
+  width: 180px;
+  margin: 10px 0 8px 0;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.app-tekst {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.app-tekst:hover {
+text-decoration: underline;
+
+}
+
+
+.bluetooth-tekst {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d5f3d;
+  background-color: rgba(45, 95, 61, 0.1);
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: 0 0 10px 0;
+}
+
+.bluetooth-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,7 +350,7 @@ display: grid;
 
 .trustpilot{
 
-width: 110.99px;
+width: 120.99px;
 height: 60px;
 }
 
@@ -299,8 +485,14 @@ h3 {
 .app-section h2 {
     font-size: 25px;
     color: white;
+    text-decoration: none;
 }
 
+.app-section h2:hover {
+
+text-decoration: underline;
+
+}
 
 /* Stjerner ved appen */
 
