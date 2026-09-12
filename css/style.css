@@ -7,6 +7,28 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+:root {
+  --black: #111111;
+  --cream: #F7F7DC;
+  --green: #2D5F3D;
+  --grey: #666666;
+}
+
+
+body {
+  background-color: var(--cream);
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+}
+
+/*-----------*/
+/* header */
+/*-----------*/
 
 
 #header-top {
@@ -90,13 +112,67 @@ text-decoration: underline;
 font-size: 17px;
 }
 
-
+/*---------------*/
+/* HERO SECTION */
+/*-------------*/
 
 .hero-section {
-    padding: 5%;
-    font-size: x-large;
-    
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 0 60px 80px;
 }
+
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(247,247,220,0.92) 5%, rgba(247,247,220,0.5) 60%, rgba(247,247,220,0.3) 100%);
+}
+
+.hero-content {
+    margin-top: 60px;
+  position: relative;
+  max-width: 650px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero-content .pulse-text {
+  font-size: 17px;
+  color: var(--grey);
+  margin-bottom: 24px;
+}
+
+.hero-content .price {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.hero-watches {
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  max-width: 420px;
+}
+
+.hero-watches img {
+    margin-top: 30px;
+  width: 100%;
+  filter: drop-shadow(0 25px 45px rgba(0,0,0,0.25));
+  }
+
+
 
 #cta-button {
    background: linear-gradient(90deg, #56c756 0%, #3e723e 100%);
@@ -114,7 +190,6 @@ font-size: 17px;
     font-size: 24px;
 }
 
-}
 
 #cta-button a {
     color: rgb(0, 0, 0);
@@ -129,10 +204,9 @@ font-size: 17px;
   background-color: #f7f7dc;
   padding: 30px 60px;
   display: grid;
-  grid-template-columns: 1fr 1.2fr auto;
+  grid-template-columns: 1fr 1fr auto;
   align-items: center;
-  gap: 40px;
-  max-width: 1300px;
+  gap: 60px;
   margin: 0 auto;
 }
 
@@ -158,14 +232,13 @@ font-size: 17px;
 }
 
 .specs-strip {
+    background-color: rgba(45, 95, 61, 0.06);
+    border-radius:  50px;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 20px 0;
-  border-top: 1px solid rgba(45, 95, 61, 0.2);
-  border-bottom: 1px solid rgba(45, 95, 61, 0.2);
-  max-width: 450px;
 }
 
 .specs-strip li {
@@ -176,7 +249,7 @@ font-size: 17px;
 }
 
 .specs-strip img {
-  width: 26px;
+  width: 28px;
   height: 26px;
   object-fit: contain;
   margin-bottom: 2px;
@@ -192,9 +265,9 @@ font-size: 17px;
 .specs-strip .spec-label {
   font-size: 12px;
   color: #666;
-  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
 
 
 
@@ -227,20 +300,41 @@ font-size: 17px;
   top: 2px;
 }
 
+.flere-features {
+  margin-top: 15px;
+}
+
+.flere-features summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #2d5f3d;
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.flere-features .feature-liste li {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.flere-features .feature-liste li h4 {
+  font-size: 14px; /* overskriften forbliver uændret */
+}
+
 .kob-nu-overskrift {
   font-size: 22px;
-  margin: 30px 0 15px 0;
+  margin: 50px 0 15px 0;
   text-decoration: none;
 
 }
 
-
-
-
-
 .ur-billede img {
-  width: 450px;
+  width: 650px;
   display: block;
+   filter: drop-shadow (0 25px 50px rgba(158, 155, 155, 0.725))
 }
 
 .app {

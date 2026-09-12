@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PULSE Athletic</title>
     <link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-
-
 
         <section id="header-top">
         
@@ -26,7 +28,6 @@
             </div>
         </section> 
         
-        
 
         <nav class="main-menu">
             <ul id="menu">
@@ -41,12 +42,23 @@
     </header>
 
     <main>
+        
         <section class="hero-section">
-            <h1>Minimalistisk design. <br> Maksimal performance.</h1>
-            <p class="pulse-text">PULSE Core kombinerer præcise målinger, intelligent teknologi <br> og et stilrent design, der følger dig hele døgnet.</p>
-            <h3 id="price" class="price">fra 1295kr</h3>
-            <div></div>
-            <button id="cta-button"> <a href="#" class="køb-nu">Køb nu</a></button> 
+            <video class="hero-video" autoplay muted loop playsinline poster="img/hero-fallback.jpg">
+                    <source src="video/pulse-hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+
+                    <figure class="hero-watches">
+                        <img src="img/athletic-watch.png" alt="PULSE Core ure i tre farver">
+                    </figure>
+
+                    <div class="hero-content">
+                        <h1>Minimalistisk design. <br> Maksimal performance.</h1>
+                        <p class="pulse-text">PULSE Core kombinerer præcise målinger, intelligent teknologi <br> og et stilrent design, der følger dig hele døgnet.</p>
+                        <h3 id="price" class="price">fra 1295kr</h3>
+                        <button id="cta-button"><a href="#" class="køb-nu">Køb nu</a></button>
+                    </div>
 
         </section>
            
@@ -92,7 +104,7 @@
                 
                 </ul>
 
-         <details class= "flere-features" >
+         <details class="flere-features" >
 
             <summary>Vis flere detaljer</summary>
 
