@@ -179,7 +179,7 @@ font-size: 17px;
 /* Billedet med de tre ure */
 .hero-watches {
   position: absolute;
-  top: 70px;
+  top: 90px;
   right: 60px;
   max-width: 420px;
   z-index: 2;
@@ -211,20 +211,78 @@ font-size: 17px;
     font-weight: 700;
     font-size: 15px;
 }
+/* ---------- SPECS-STRIP  ---------- */
+
+.specs-strip {
+    grid-column: 1 / -1;
+    background-color: rgba(45, 95, 61, 0.06);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 60px 0;
+    gap: 30px;
+    margin-bottom: 2px;
+    border-top: 2px solid rgba(45, 95, 61, 0.15);
+    border-bottom: 2px solid rgba(45, 95, 61, 0.15);
+}
+
+.specs-strip li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 4px;
+  padding: 20px 0;
+  border-right: 1px solid rgba(45, 95, 61, 0.2);
+}
+
+.specs-strip li:last-child {
+  border-right: none;
+}
+
+.specs-strip img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+ .spec-tal {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+  color: var(--green)
+}
+
+.spec-label {
+  font-size: 13px;
+  color: var(--grey);
+  margin: 4px 0 0 0;
+}
+
 
 /*------------------ */
 /*    SECTION 2     */
 /*-------------------*/
 
+
+/* ---------- VENSTRE KOLONNE ---------- */
+
 .ur-features {
   background-color: var(--cream);
   padding: 90px 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  align-items: start;
-  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
   margin: 0 auto;
+
 }
+
+.ur-venstre header{ 
+margin-bottom: 30px;}
+
 
 #pulse-label {
   font-size: 40px;
@@ -235,61 +293,31 @@ font-size: 17px;
 }
 
 #uret-der {
-  font-size: 34px;
-  margin-bottom: 16px;
+  font-size: 32px;
+  margin-bottom: 20px;
  white-space: nowrap;
 }
 
 .intro {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 150px;
   max-width: 400px;
   color: var(--grey);
   text-decoration:none;
 }
-/* ---------- SPECS-STRIP  ---------- */
 
-.specs-strip {
-    background-color: rgba(45, 95, 61, 0.06);
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    gap: 30px;
-    margin-bottom: 35px;
-    border-top: 2px solid rgba(45, 95, 61, 0.15);
-    border-bottom: 2px solid rgba(45, 95, 61, 0.15);
+/* ---------- BILLEDET AF URENE ---------- */
+.ur-billede img {
+ width: 100%;
+  max-width: 680px;
+  display: block;
+   filter: drop-shadow (0 25px 50px rgba(158, 155, 155, 0.725))
 }
 
-.specs-strip li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
+/* ---------- HØJRE KOLONNE: -------- */
 
-.specs-strip img {
-  width: 26px;
-  height: 26px;
-  object-fit: contain;
-  margin-bottom: 4px;
-}
-
- .spec-tal {
-  font-weight: 700;
-  font-size: 17px;
-  margin: 0;
-  color: var(--black)
-}
-
-.spec-label {
-  font-size: 13px;
-  color: var(--grey);
-  margin: 10px;
-}
-
-
+/* ---------- FEATURE-LISTE  ---------- */
 
 .feature-liste {
   list-style: none;
@@ -298,41 +326,47 @@ font-size: 17px;
 }
 
 .feature-liste li {
-  font-size: 16px;
-  padding: 8px 0 8px 22px;
-  position: relative;
-  line-height: 1.5;
-  color: #444;
+  font-size: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  line-height: 2;
+  color: var(--grey);
+ }
+
+.feature-liste li:first-child {
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
 }
 
 .feature-liste li h4 {
-  font-size: 17px;
-  margin: 0 0 3px 0;
-  color: #111;
+  font-size: 16px;
+  margin: 0 0 4px 0;
+  color: var(--black)
 }
 
-.feature-liste li::before {
-  content: "•";
-  color: #2d5f3d;
-  font-size: 28px;
-  position: absolute;
-  left: 0;
-  top: 2px;
-}
-
+/* ---------- "VIS FLERE DETALJER"  ---------- */
 .flere-features {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .flere-features summary {
   cursor: pointer;
-  font-weight: bold;
-  color: #2d5f3d;
-  font-size: 16px;
+  font-weight: 700;
+  color: var(--green);
+  font-size: 14px;
   list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  padding: 16px 0;
+}
+
+.flere-features summary::-webkit-details-marker {
+  display: none;
+}
+
+.flere-features summary::before {
+  content: "+";
+}
+
+.flere-features[open] summary::before {
+  content: "– ";
 }
 
 .flere-features .feature-liste li {
@@ -341,88 +375,203 @@ font-size: 17px;
 }
 
 .flere-features .feature-liste li h4 {
-  font-size: 14px; /* overskriften forbliver uændret */
+  font-size: 14px; 
 }
 
+/* ---------- "KØB URET I DAG..." OVERSKRIFT ---------- */
 .kob-nu-overskrift {
   font-size: 22px;
-  margin: 50px 0 15px 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
   text-decoration: none;
 
 }
 
-.ur-billede img {
-  width: 650px;
-  display: block;
-   filter: drop-shadow (0 25px 50px rgba(158, 155, 155, 0.725))
-}
+/* ---------- APP ---------- */
 
-.app {
-  display: flex;
-  flex-direction: column;
+.app-connect {
+background-color: var(--green);
+border-radius: 28px;
+padding: 70px 60px;
+max-width: 1300px;
+margin: 0 auto 5% auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: #2d5f3d;
+  gap: 60px;
+}
+/* ---------- VENSTRE SIDE: tekst ---------- */
+
+.app-connect-tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+/* bluetooth-ikonet */
+.bluetooth-tekst {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
-.app-telefon {
-  width: 180px;
-  margin: 10px 0 8px 0;
-  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cream);
+
+  background-color: rgba(247, 247, 220, 0.15);
+  padding: 8px 16px;
+  border-radius: 100px;   
+
+  margin: 0 0 22px 0;
 }
 
-.app-tekst {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
+.bluetooth-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
-.app-tekst:hover {
+.app-connect-tekst h3 {
+  color: var(--cream);
+  font-size: 32px;
+  margin-bottom: 26px;
+  max-width: 380px;
+}
+
+.download-knap {
+  display: inline-block;
+  background-color: var(--cream);
+  color: var(--green);
+
+  padding: 16px 34px;
+  border-radius: 100px;
+
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.download-knap:hover {
 text-decoration: underline;
 
 }
 
+.download-knap {
+  display: inline-block;
+  background-color: var(--cream);
+  color: var(--green);
 
-.bluetooth-tekst {
+  padding: 16px 34px;
+  border-radius: 100px;
+
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ---------- HØJRE SIDE: telefonbillede ---------- */
+
+.app-connect-telefon img {
+    margin-right: 90px;
+  width: 200px;
+  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.3));
+}
+
+
+/* BRUGER ANMELDELSER*/
+
+.review-section{
+max-width: 1300px;
+    padding: 0 60px;
+    margin: 0 auto 60px auto;
+  
+}
+
+.reviews-header {
+  grid-column: 1 / -1;
+
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #2d5f3d;
-  background-color: rgba(45, 95, 61, 0.1);
-  padding: 5px 12px;
+  justify-content: space-between;   /* 👈 skubber trustpilot til højre, overskrift til venstre */
+}
+
+/* Trustpilot billede */
+
+.trustpilot{
+order: 2;
+width: 130px;
+height: 60px;
+}
+
+.trustpilot:hover {
+    transform: scale(1.03);
+}
+
+/* Overskrift */
+
+.review-section h3 {
+    order: 1;
+    margin-bottom: 5px;
+    font-size: 20px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.review-section h3 img {
+  width: 40px;
+  height: 40px;
+}
+
+.review-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+
+/* Hver anmeldelse */
+
+.review-section article {
+  background-color: #FFFFFF;
   border-radius: 20px;
-  margin: 0 0 10px 0;
+  padding: 30px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
 }
 
-.bluetooth-icon {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
+/* Stjernerne */
+
+.stars {
+    gap: 3px;
+    margin-bottom: 16px;
 }
 
+/* Hver enkelt stjerne */
 
+.review-section .stars img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 2px;
+}
 
+/* Teksten under stjernerne */
+.review-section article p:not(.stars) {
+  font-size: 15px;
+  color: var(--black);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.review-section article strong {
+  font-size: 13px;
+  color: var(--grey);
+  font-weight: 600;
+}
 
 
 
@@ -448,78 +597,12 @@ display: grid;
 /* VENSTRE SIDE */
 /* -------------------- */
 
-.reviews{
-
-    padding: 20px;
-    margin-bottom: 0;
-}
-
-/* Trustpilot billede */
-
-.trustpilot{
-
-width: 120.99px;
-height: 60px;
-}
-
-.trustpilot:hover {
-    transform: scale(1.03);
-}
-
-/* Overskrift */
-
-h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: underline;
-
-}
-
-/* Hver anmeldelse */
-
-.review {
-    margin-top: 30px;
-}
-
-/* Stjernerne */
-
-.stars {
-    gap: 3px;
-}
-
-/* Hver enkelt stjerne */
-
-.stars img {
-    width: 35px;
-    height: 35px;
-}
-
-/* Teksten under stjernerne */
-
-.reviews {
-   
-    
-
-    font-size: 13px;
-    color: #dddddd;
-    line-height: 1.25;
-}
-
-
-
-/* -------------------- */
-/* MIDTEN */
-/* -------------------- */
-
 
 .footer-links {
 
 
- padding-top: 40px;
- padding-left: 40px;
+ padding-top: 80px;
+ padding-left: 80px;
 
     display: flex;
     flex-direction: column;
@@ -545,8 +628,7 @@ h3 {
     text-decoration: underline;
     font-weight: 800;
     font-style: normal;
-  
-
+    color: gainsboro
 }
 
 /* Når musen er over */
@@ -555,6 +637,13 @@ h3 {
     text-decoration: underline;
 }
 
+/* -------------------- */
+/* MIDTEN */
+/* -------------------- */
+
+.footer-midt {
+  background-color: #272727;
+}
 
 /* -------------------- */
 /* HØJRE SIDE */
@@ -563,7 +652,8 @@ h3 {
 
 .app-section {
    background: radial-gradient(49.9% 46.71% at 50% 50%, rgba(24, 22, 22, 0.20) 16.83%, rgba(42, 39, 39, 0.20) 30.29%, rgba(36, 34, 34, 0.20) 53.37%, rgba(135, 132, 132, 0.20) 83.17%, rgba(196, 192, 192, 0.20) 100%), #2C9844;
-   padding: 40px 20px;
+   padding: 40px 150px;
+ 
 
 }
 
