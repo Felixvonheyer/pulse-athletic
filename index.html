@@ -42,25 +42,32 @@
     </header>
 
     <main>
-        
+
         <section class="hero-section">
-            <video class="hero-video" autoplay muted loop playsinline poster="img/hero-fallback.jpg">
-                    <source src="video/pulse-hero.mp4" type="video/mp4">
-                </video>
-                <div class="hero-overlay"></div>
 
-                    <figure class="hero-watches">
-                        <img src="img/athletic-watch.png" alt="PULSE Core ure i tre farver">
-                    </figure>
+    <!-- Baggrundsvideoen-->
+    <!-- autoplay = starter automatisk | muted = ingen lyd | loop = starter forfra igen | playsinline = afspilles i selve siden på mobil -->
+    <video class="hero-video" autoplay muted loop playsinline poster="#">
+        <source src="#" alt="Pulse Core video">
+    </video>
 
-                    <div class="hero-content">
-                        <h1>Minimalistisk design. <br> Maksimal performance.</h1>
-                        <p class="pulse-text">PULSE Core kombinerer præcise målinger, intelligent teknologi <br> og et stilrent design, der følger dig hele døgnet.</p>
-                        <h3 id="price" class="price">fra 1295kr</h3>
-                        <button id="cta-button"><a href="#" class="køb-nu">Køb nu</a></button>
-                    </div>
+    <!-- En gradient lag ovenpå videoen -->
+    <div class="hero-overlay"></div>
 
-        </section>
+    <!-- Billedet af de tre ure -->
+    <figure class="hero-watches">
+        <img src="img/athletic-watch.png" alt="PULSE Core ure i tre farver">
+    </figure>
+
+    <!-- Teksten -->
+    <div class="hero-content">
+      <h1> Minimalistisk design. <br> <span class="accent-tekst">Maksimal performance.</span></h1>
+        <p class="pulse-text">PULSE Core kombinerer præcise målinger, intelligent teknologi <br> og et stilrent design, der følger dig hele døgnet.</p>
+        <h3 id="price" class="price">fra 1295kr</h3>
+        <button id="cta-button"><a href="#" class="køb-nu">Køb nu</a></button>
+    </div>
+
+</section>
            
 
           <!-- Sektion 2-->
