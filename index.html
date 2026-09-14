@@ -4,32 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PULSE Athletic</title>
-    <link rel="stylesheet" href="css/style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     <header>
-
         <section id="header-top">
-        
          <img id="pulse-logo" src="img/pulse-athletic-logo.png" alt="pulse-athletic-logo">
-            <!-- brug for en container for at skubbe iconerne på højre side -->
          <div class="search-tools">
             <a href="#">
                 <img src="img/search-icon.png" alt="search-icon">
             </a>
-
             <a href="#">
                 <img src="img/shopping-icon.png" alt="shopping-icon">
             </a>
             </div>
         </section> 
-        
 
-        <nav class="main-menu">
+        <nav class="main-menu" aria-label="hovedmenu">
             <ul id="menu">
                 <li><a href="#">Produkt</a></li>
                 <li><a href="#">Nyheder</a></li>
@@ -42,39 +35,32 @@
     </header>
 
     <main>
-<<<<<<< HEAD
-=======
         <!-- Sektion 1-->
-
-        <section class="hero-section">
-            <h1>Minimalistisk design. <br> Maksimal performance.</h1>
-            <p class="pulse-text">PULSE Core kombinerer præcise målinger, intelligent teknologi <br> og et stilrent design, der følger dig hele døgnet.</p>
-            <h3 id="price" class="price">fra 1295kr</h3>
-            <div></div>
-            <button id="cta-button"> <a href="#" class="køb-nu">Køb nu</a></button> 
->>>>>>> 84ec457cc4bc71b2c94e5d13b3ccb4ffe5e7ca07
-
+         
         <section class="hero-section">
 
     <!-- Baggrundsvideoen-->
     <!-- autoplay = starter automatisk | muted = ingen lyd | loop = starter forfra igen | playsinline = afspilles i selve siden på mobil -->
-    <video class="hero-video" autoplay muted loop playsinline poster="img/Skærmbillede 2026-09-12 kl. 17.52.34.png">
-        <source src="video/copy_6610CA43-D8D3-4C63-8796-2D35F1028D2F.mov" alt="Pulse Core video">
+    <video class="hero-video" autoplay muted loop playsinline poster="img/Skærmbillede 2026-09-12 kl. 17.52.34.png" type="pulse-core-video">
+        <source src="video/copy_6610CA43-D8D3-4C63-8796-2D35F1028D2F.mov">
     </video>
 
     <!-- En gradient lag ovenpå videoen -->
+
     <div class="hero-overlay"></div>
 
     <!-- Billedet af de tre ure -->
+
     <figure class="hero-watches">
         <img src="img/athletic-watch.png" alt="PULSE Core ure i tre farver">
     </figure>
 
     <!-- Teksten -->
+
     <div class="hero-content">
-      <h1> Minimalistisk design. <br> <span class="accent-tekst">Maksimal performance.</span></h1>
+      <h1> Minimalistisk design. <br> <span class="accent-tekst"> Maksimal performance.</span> </h1>
         <p class="pulse-text">PULSE Core kombinerer præcise målinger, intelligent teknologi <br> og et stilrent design, der følger dig hele døgnet.</p>
-        <h3 id="price" class="price">fra 1295kr</h3>
+        <p id="price" class="price">fra 1295kr</p>
         <button id="cta-button"><a href="#" class="køb-nu">Køb nu</a></button>
     </div>
 
@@ -177,8 +163,6 @@
 
 </section>
 
-</section>
-
 
     </main>
 
@@ -192,12 +176,12 @@
 
 <article class="review-1">
 
-<p class="stars">
-    <img src="img/yellow-star.png" alt="star">
-    <img src="img/yellow-star.png" alt="star">
-    <img src="img/yellow-star.png" alt="star">
-    <img src="img/yellow-star.png" alt="star">
-    <img src="img/yellow-star.png" alt="star">
+<p class="stars" aria-label="5 ud af 5 stjerner">
+    <img src="img/yellow-star.png" alt="">
+    <img src="img/yellow-star.png" alt="">
+    <img src="img/yellow-star.png" alt="">
+    <img src="img/yellow-star.png" alt="">
+    <img src="img/yellow-star.png" alt="">
 </p>
   
 <p>
@@ -210,11 +194,11 @@
 
 <article class="review-2">
 
-<p class="stars">
-    <img src="img/yellow-star.png" alt="star">
-    <img src="img/yellow-star.png" alt="star">
-    <img src="img/yellow-star.png" alt="star">
-    <img src="img/yellow-star.png" alt="star">
+<p class="stars" aria-label="4 ud af 5 stjerner">
+    <img src="img/yellow-star.png" alt="">
+    <img src="img/yellow-star.png" alt="">
+    <img src="img/yellow-star.png" alt="">
+    <img src="img/yellow-star.png" alt="">
 </p>
    
 <p>
@@ -226,28 +210,26 @@
 </article>
 
 <article class="review-3">
-        <p class="stars">
-            <img src="img/yellow-star.png" alt="star">
-            <img src="img/yellow-star.png" alt="star">
-            <img src="img/yellow-star.png" alt="star">
-            <img src="img/yellow-star.png" alt="star">
-            <img src="img/yellow-star.png" alt="star">
+        <p class="stars" aria-label="5 ud af 5 stjerner">
+            <img src="img/yellow-star.png" alt="">
+            <img src="img/yellow-star.png" alt="">
+            <img src="img/yellow-star.png" alt="">
+            <img src="img/yellow-star.png" alt="">
+            <img src="img/yellow-star.png" alt="">
         </p>
         <p>"Bruger det til styrketræning hver dag. Registrerer alt automatisk, og batteriet holder hele ugen."</p>
         <br>
         <strong>— Emil, 27 år</strong>
     </article>
-
-
-
 </section>
 
-    <footer class="footer">
 
 
-        </section>
 
-<nav class="footer-links">
+<footer class="footer">
+
+
+<nav class="footer-links" aria-label="Hjælp og information">
 
     <a href="#"> Hjælp og info </a>
         <a href="#"> Kontakt </a>
@@ -263,7 +245,6 @@
 
 
 <section class="app-section">
-
 <article class="app-info">
 
             <figure class="app-logo">
@@ -293,14 +274,13 @@
            </a>
             <img class="app-store" src="img/Vector.png" alt="">
         </button>
-
 </section>
 
-<section class="footer-bottom">
+    <section class="footer-bottom">
 
    <small>© 2026 PULSE Athletics</small>
 
-        <nav>
+        <nav aria-label="Juridisk information">
             <p>
             <a href="#">Oplysninger om PULSE Athletics|</a>
             <a href="#">Fortrolighed og cookies|</a>
@@ -311,9 +291,8 @@
 
         </nav>
 
-</section>
-
-    </footer>
+    </section>
+ </footer>
     
 </body>
 </html>

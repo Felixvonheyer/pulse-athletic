@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
@@ -12,29 +12,32 @@
   --cream: #F7F7DC;
   --green: #2D5F3D;
   --grey: #666666;
+  --darkgrey: #272727;
+  --gradientgreen1: #5EAB5E;
+  --gradientgreen2: #3B7D3B;
 }
 
 
 body {
-  background-color: var(--cream);
+  background: var(--cream);
   color: var(--black);
   font-family: 'Inter', sans-serif;
+  margin: 0;
 }
 
 h1, h2, h3 {
   font-family: 'Archivo Black', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /*-----------*/
 /* header */
 /*-----------*/
 
-
 #header-top {
     position: relative;
     height: 95px;
-    background: linear-gradient(90deg, #5EAB5E 0%, #3B7D3B 49.52%, #5EAB5E 100%);
+    background: linear-gradient(90deg, var(--gradientgreen1) 0%, var(--gradientgreen2) 49.52%, var(--gradientgreen1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,34 +45,21 @@ h1, h2, h3 {
 
 #pulse-logo {
     position: absolute;
-    left: 50%;
-    top: 32%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+   top: 2%;
     width: 200px;
     height: auto;
-    
-}
-
-
-#pulse-logo :hover img{
-transform: scale(1.40)
 }
 
 .search-tools {
-    align-items: end;
+    display: flex;
+    align-items: flex-end;
     right: 30px;
-    top: 50%;
-    transform:translateY(-50%) 
-}
-
-
-.search-tools {
+    top: 50%; 
   position: absolute;
   right: 30px;
   top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
   gap: 20px;
 }
 
@@ -81,9 +71,7 @@ transform: scale(1.40)
 }
 
 .search-tools :hover{
-
-transform: scale(1.03)
-
+transform: scale(1.03);
 }
 
 #menu {
@@ -93,8 +81,7 @@ transform: scale(1.03)
     margin: 0;
     padding: 7px;
     list-style: none;
-    background-color: rgb(48, 47, 47); 
-
+    background-color: var(--darkgrey);
 }
 
 #menu a {
@@ -141,7 +128,7 @@ transform: scale(1.03)
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(247,247,220,0.7) 5%, rgba(247,247,220,0.3) 60%, rgba(247,247,220,0.15) 100%);
+  background:  linear-gradient(0deg, rgba(247,247,220,0.7) 5%, rgba(247,247,220,0.3) 60%, rgba(247,247,220,0.15) 100%);
   z-index: 1;
 }
 
@@ -156,7 +143,7 @@ transform: scale(1.03)
 
 .hero-content h1 {
   font-size: 48px;
-  line-height: 0,95;
+  line-height: 0.95;
   margin-bottom: 30px;
 }
 
@@ -167,7 +154,7 @@ transform: scale(1.03)
 
 .hero-content .pulse-text {
   font-size: 17px;
-  color: rgb(43, 46, 45);
+  color: var(--darkgrey);
   margin-bottom: 50px;
   line-height: 2.5;
 }
@@ -223,16 +210,14 @@ transform: scale(1.03)
 
 
 
-
 /* ---------- SPECS-STRIP  ---------- */
 
 .specs-strip {
-    grid-column: 1 / -1;
     background-color: rgba(45, 95, 61, 0.06);
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     margin: 0 0 60px 0;
     gap: 30px;
@@ -266,7 +251,7 @@ transform: scale(1.03)
   font-weight: 700;
   font-size: 22px;
   margin: 0;
-  color: var(--green)
+  color: var(--green);
 }
 
 .spec-label {
@@ -325,7 +310,7 @@ margin-bottom: 30px;}
  width: 100%;
   max-width: 680px;
   display: block;
-   filter: drop-shadow (0 25px 50px rgba(158, 155, 155, 0.725))
+   filter: drop-shadow (0 25px 50px rgba(158, 155, 155, 0.725));
 }
 
 /* ---------- HØJRE KOLONNE: -------- */
@@ -353,7 +338,7 @@ margin-bottom: 30px;}
 .feature-liste li h4 {
   font-size: 16px;
   margin: 0 0 4px 0;
-  color: var(--black)
+  color: var(--black);
 }
 
 /* ---------- "VIS FLERE DETALJER"  ---------- */
@@ -453,22 +438,8 @@ margin: 0 auto 5% auto;
   max-width: 380px;
 }
 
-.download-knap {
-  display: inline-block;
-  background-color: var(--cream);
-  color: var(--green);
-
-  padding: 16px 34px;
-  border-radius: 100px;
-
-  font-weight: 700;
-  font-size: 15px;
-  text-decoration: none;
-}
-
 .download-knap:hover {
 text-decoration: underline;
-
 }
 
 .download-knap {
@@ -499,8 +470,11 @@ text-decoration: underline;
 max-width: 1300px;
     padding: 0 60px;
     margin: 0 auto 60px auto;
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
 }
+  
 
 .reviews-header {
   grid-column: 1 / -1;
@@ -538,12 +512,6 @@ height: 60px;
 .review-section h3 img {
   width: 40px;
   height: 40px;
-}
-
-.review-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
 }
 
 
@@ -595,7 +563,7 @@ height: 60px;
 .footer {
 
 
-background-color: #272727;
+background-color: var(--darkgrey);
 
 display: grid;
 
@@ -612,7 +580,6 @@ display: grid;
 
 
 .footer-links {
-
 
  padding-top: 80px;
  padding-left: 80px;
@@ -641,7 +608,7 @@ display: grid;
     text-decoration: underline;
     font-weight: 800;
     font-style: normal;
-    color: gainsboro
+    color: gainsboro;
 }
 
 /* Når musen er over */
@@ -655,7 +622,7 @@ display: grid;
 /* -------------------- */
 
 .footer-midt {
-  background-color: #272727;
+  background-color: var(--darkgrey);
 }
 
 /* -------------------- */
@@ -677,7 +644,7 @@ display: grid;
     height: 85px;
     margin-bottom: 30px;
 
-    background-color: #fffde0;
+    background-color: var(--cream);
     border-radius: 18px;
     display:flex;
    justify-content:center;
@@ -763,11 +730,11 @@ height: auto;
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #272727;
+    color: var(--Darkgrey);
 }
 
 .download-link {
-    color: #272727;
+    color: var(--darkgrey);
     text-decoration: none;
     font-size: 25px;
 }
@@ -783,7 +750,7 @@ height: auto;
 
 .footer-bottom {
       grid-column: 1 / 4;
- background-color: #3cad54;
+ background-color: var(--gradientgreen1);
  margin: 0;
 
 
@@ -816,7 +783,5 @@ text-decoration: none;
 }
 
 body{
-
 margin: 0;
-
 }
